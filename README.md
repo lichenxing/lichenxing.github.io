@@ -1,2 +1,2 @@
 # lichenxing.github.io
-MyBlog
+  开创圈外的生活，寻找远方的自己
