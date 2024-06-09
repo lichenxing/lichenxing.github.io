@@ -62,3 +62,5 @@ theme: icarus
 deploy:
   type: git
   repo: git@github.com:lichenxing/lichenxing.github.io.git,master
+plugins:
+  - hexo-admin
