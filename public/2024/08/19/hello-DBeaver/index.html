@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>hello DBeaver - chenxing&#039;s blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="chenxing&#039;s blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="chenxing&#039;s blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="DBeaver简介DBeaver 是一款跨平台的数据库管理工具，主要用于连接、管理和操作各种类型的数据库。它支持多种数据库，包括 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等等。DBeaver 提供了一个图形用户界面（GUI），使得用户可以更直观地执行查询、查看数据、编辑表结构、导入导出数据以及进行数据库管理任务。 其主要特点包括：  多数据库支持：可以连"><meta property="og:type" content="blog"><meta property="og:title" content="hello DBeaver"><meta property="og:url" content="https://lichenxing.github.io/2024/08/19/hello-DBeaver/"><meta property="og:site_name" content="chenxing&#039;s blog"><meta property="og:description" content="DBeaver简介DBeaver 是一款跨平台的数据库管理工具，主要用于连接、管理和操作各种类型的数据库。它支持多种数据库，包括 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等等。DBeaver 提供了一个图形用户界面（GUI），使得用户可以更直观地执行查询、查看数据、编辑表结构、导入导出数据以及进行数据库管理任务。 其主要特点包括：  多数据库支持：可以连"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://lichenxing.github.io/img/og_image.png"><meta property="article:published_time" content="2024-08-19T13:59:29.000Z"><meta property="article:modified_time" content="2024-08-19T14:10:20.494Z"><meta property="article:author" content="晨星"><meta property="article:tag" content="database"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://lichenxing.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lichenxing.github.io/2024/08/19/hello-DBeaver/"},"headline":"hello DBeaver","image":["https://lichenxing.github.io/img/og_image.png"],"datePublished":"2024-08-19T13:59:29.000Z","dateModified":"2024-08-19T14:10:20.494Z","author":{"@type":"Person","name":"晨星"},"publisher":{"@type":"Organization","name":"chenxing's blog","logo":{"@type":"ImageObject","url":"https://lichenxing.github.io/img/logo.svg"}},"description":"DBeaver简介DBeaver 是一款跨平台的数据库管理工具，主要用于连接、管理和操作各种类型的数据库。它支持多种数据库，包括 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等等。DBeaver 提供了一个图形用户界面（GUI），使得用户可以更直观地执行查询、查看数据、编辑表结构、导入导出数据以及进行数据库管理任务。 其主要特点包括：  多数据库支持：可以连"}</script><link rel="canonical" href="https://lichenxing.github.io/2024/08/19/hello-DBeaver/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/monokai.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="chenxing&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-08-19T13:59:29.000Z" title="8/19/2024, 9:59:29 PM">2024-08-19</time>发表</span><span class="level-item"><time dateTime="2024-08-19T14:10:20.494Z" title="8/19/2024, 10:10:20 PM">2024-08-19</time>更新</span><span class="level-item">7 分钟读完 (大约977个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">hello DBeaver</h1><div class="content"><h2 id="DBeaver简介"><a href="#DBeaver简介" class="headerlink" title="DBeaver简介"></a>DBeaver简介</h2><p>DBeaver 是一款跨平台的数据库管理工具，主要用于连接、管理和操作各种类型的数据库。它支持多种数据库，包括 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等等。DBeaver 提供了一个图形用户界面（GUI），使得用户可以更直观地执行查询、查看数据、编辑表结构、导入导出数据以及进行数据库管理任务。</p>
+<p>其主要特点包括：</p>
+<ol>
+<li>多数据库支持：可以连接多种类型的数据库，支持 JDBC 驱动程序。</li>
+<li>用户友好界面：提供图形化界面，简化了复杂的 SQL 操作和数据库管理任务。</li>
+<li>高级 SQL 编辑器：支持语法高亮、自动补全和错误提示等功能。</li>
+<li>数据浏览和编辑：可以直观地浏览和编辑数据库中的表数据。</li>
+<li>数据库元数据管理：支持查看和管理数据库的结构和对象，如表、视图、存储过程等。</li>
+<li>数据导入导出：可以方便地从文件导入数据或将数据导出到文件。</li>
+<li>DBeaver 有免费社区版和付费企业版两种版本，企业版提供了更多高级功能。</li>
+</ol>
+<h2 id="DBeaver优劣势"><a href="#DBeaver优劣势" class="headerlink" title="DBeaver优劣势"></a>DBeaver优劣势</h2><p>DBeaver 是一款广受欢迎的数据库管理工具，支持多种数据库类型（如 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等）。它既有优点也有缺点，以下是一些主要的优势和劣势：</p>
+<h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ol>
+<li><p><strong>多数据库支持</strong>：DBeaver 支持多种数据库类型，可以通过一个工具管理不同类型的数据库，减少了学习和使用多个工具的复杂性。</p>
+</li>
+<li><p><strong>跨平台</strong>：DBeaver 是一个跨平台工具，支持 Windows、macOS 和 Linux，这使得它在不同操作系统上的使用体验一致。</p>
+</li>
+<li><p><strong>用户友好的界面</strong>：DBeaver 提供了一个直观且易于使用的用户界面，支持可视化的表格设计、查询编辑器和数据浏览器。</p>
+</li>
+<li><p><strong>丰富的功能</strong>：</p>
+<ul>
+<li>SQL 编辑器支持语法高亮、自动补全和代码格式化。</li>
+<li>数据导入和导出功能强大，支持多种格式（如 CSV、Excel、JSON 等）。</li>
+<li>支持 ER 图表（Entity-Relationship Diagram），方便数据库设计和分析。</li>
+<li>提供高级的调试和性能分析工具。</li>
+</ul>
+</li>
+<li><p><strong>插件支持</strong>：DBeaver 支持插件，可以通过安装插件来扩展其功能，满足特定需求。</p>
+</li>
+<li><p><strong>开源和社区支持</strong>：DBeaver 有一个活跃的开源社区，用户可以获得及时的帮助和支持，同时也可以贡献代码和建议。</p>
+</li>
+</ol>
+<h3 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h3><ol>
+<li><p><strong>资源消耗</strong>：DBeaver 是一个功能丰富的工具，因此在某些情况下可能会消耗较多的系统资源，尤其是处理大型数据库时。</p>
+</li>
+<li><p><strong>学习曲线</strong>：尽管界面友好，但对于初学者来说，丰富的功能和选项可能需要一定的时间来熟悉和掌握。</p>
+</li>
+<li><p><strong>性能问题</strong>：在处理非常大的数据集或复杂的查询时，DBeaver 有时可能会出现性能瓶颈。</p>
+</li>
+<li><p><strong>插件兼容性</strong>：虽然插件可以扩展功能，但有些插件可能会与特定版本的 DBeaver 不完全兼容，导致一些意外的问题。</p>
+</li>
+<li><p><strong>社区版与企业版</strong>：DBeaver 提供社区版（免费）和企业版（收费），某些高级功能（如 NoSQL 数据库支持、高级数据可视化等）仅在企业版中提供。</p>
+</li>
+</ol>
+</div><div class="article-licensing box"><div class="licensing-title"><p>hello DBeaver</p><p><a href="https://lichenxing.github.io/2024/08/19/hello-DBeaver/">https://lichenxing.github.io/2024/08/19/hello-DBeaver/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>晨星</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-08-19</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-08-19</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/database/">database</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/08/18/hello-world/"><span class="level-item">Hello World</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="李晨星"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">李晨星</p><p class="is-size-6 is-block">项目经理</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>四川·成都</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">11</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/lichenxing" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/08/"><span class="level-start"><span class="level-item">八月 2024</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/06/"><span class="level-start"><span class="level-item">六月 2024</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/05/"><span class="level-start"><span class="level-item">五月 2024</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/adb/"><span class="level-start"><span class="level-item">adb</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/file/"><span class="level-start"><span class="level-item">file</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/ollama/"><span class="level-start"><span class="level-item">ollama</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-19T13:59:29.000Z">2024-08-19</time></p><p class="title"><a href="/2024/08/19/hello-DBeaver/">hello DBeaver</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-18T06:23:30.992Z">2024-08-18</time></p><p class="title"><a href="/2024/08/18/hello-world/">Hello World</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-09T06:57:00.000Z">2024-06-09</time></p><p class="title"><a href="/2024/06/09/test-hexo-admin/">test-hexo-admin</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-05T08:54:50.000Z">2024-06-05</time></p><p class="title"><a href="/2024/06/05/hello-ollama/">hello-ollama</a></p><p class="categories"><a href="/categories/ollama/">ollama</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-02T13:44:12.000Z">2024-06-02</time></p><p class="title"><a href="/2024/06/02/hello-django/">hello django</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/adb/"><span class="tag">adb</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/database/"><span class="tag">database</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/django/"><span class="tag">django</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/file/"><span class="tag">file</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/launcher/"><span class="tag">launcher</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ollama/"><span class="tag">ollama</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ssh/"><span class="tag">ssh</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="chenxing&#039;s blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 晨星</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2024</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
